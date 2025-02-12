@@ -44,6 +44,7 @@ import dotenv from "dotenv";
 import express from 'express';
 import bodyparser from 'body-parser' ;             
 import mongoose from "mongoose";
+import cors from 'cors'
 dotenv.config();
 
 import route  from "./routes/userroute.js";
@@ -51,6 +52,15 @@ import route  from "./routes/userroute.js";
 const app=express();
 const port=process.env.PORT;
 const url=process.env.MONGOOSE_URL;
+app.use(
+    cors({
+      origin: "*",
+      credentials: true,
+      methods: "GET,POST,PUT,DELETE", 
+      allowedHeaders: "Content-Type,Authorization", 
+    })
+  );
+
 
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({extended:false}));

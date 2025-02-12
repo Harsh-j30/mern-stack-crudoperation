@@ -16,6 +16,10 @@ const userschemas = new mongoose.Schema(
         age:{
             type:Number,
             required:true
+        },
+        token:{
+           type:String,
+           default:""
         }
     },
     {

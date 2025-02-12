@@ -8,11 +8,14 @@
   "dependencies": {
     "anymatch": "^3.1.3",
     "balanced-match": "^1.0.2",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
     "binary-extensions": "^2.3.0",
     "brace-expansion": "^1.1.11",
     "braces": "^3.0.3",
     "chokidar": "^3.6.0",
     "concat-map": "^0.0.1",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "fill-range": "^7.1.1",
@@ -24,8 +27,9 @@
     "is-extglob": "^2.1.1",
     "is-glob": "^4.0.3",
     "is-number": "^7.0.0",
+    "jsonwebtoken": "^9.0.2",
     "minimatch": "^3.1.2",
-    "mongoose": "^8.8.4",
+    "mongoose": "^8.9.2",
     "normalize-path": "^3.0.0",
     "picomatch": "^2.3.1",
     "pstree.remy": "^1.1.8",
@@ -39,10 +43,10 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon test.js"
+    "start": "nodemon mongoconnect.js"
   },
   "keywords": [],
-  "type": "module",
+  "type":"module",
   "author": "",
   "license": "ISC",
   "description": ""
